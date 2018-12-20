@@ -4,10 +4,12 @@
  * @module model/user
  * @author biaochenxuying <https://github.com/biaochenxuying>
  */
-
+// 加密模块
 const crypto = require('crypto');
+// yargs 是nodejs环境下的命令行参数解析工具
 const { argv } = require('yargs');
 const { mongoose } = require('../core/mongodb.js');
+// mongodb id 自增长
 const autoIncrement = require('mongoose-auto-increment');
 
 const adminSchema = new mongoose.Schema({

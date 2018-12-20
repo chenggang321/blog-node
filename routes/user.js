@@ -163,6 +163,7 @@ exports.delUser = (req, res) => {
 
 exports.getUserList = (req, res) => {
 	let keyword = req.query.keyword || '';
+	// 分页逻辑
 	let pageNum = parseInt(req.query.pageNum) || 1;
 	let pageSize = parseInt(req.query.pageSize) || 10;
 	let conditions = {};

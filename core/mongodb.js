@@ -10,7 +10,7 @@ const CONFIG = require('../app.config.js')
 const mongoose = require('mongoose')
 const autoIncrement = require('mongoose-auto-increment')
 
-// remove DeprecationWarning
+// remove DeprecationWarning 修复弃用警告
 mongoose.set('useFindAndModify', false)
 
 
